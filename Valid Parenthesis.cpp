@@ -27,9 +27,9 @@ bool isvalid(string s)
                 break;
             }
         }
-        else if (!st.empty() && s[i] == '}')
+        else if (s[i] == '}')
         {
-            if (st.top() == '{')
+            if (!st.empty() && st.top() == '{')
             {
                 st.pop();
             }
@@ -39,9 +39,9 @@ bool isvalid(string s)
                 break;
             }
         }
-        else if (!st.empty() && s[i] == ']')
+        else if (s[i] == ']')
         {
-            if (st.top() == '[')
+            if (!st.empty() && st.top() == '[')
             {
                 st.pop();
             }
