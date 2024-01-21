@@ -1,5 +1,5 @@
 class Solution{
-public:	
+public:
 	vector<int> kLargest(int arr[], int n, int k) {
 	 sort(arr,arr+n);
 	 reverse(arr,arr+n);
