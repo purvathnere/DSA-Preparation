@@ -7,10 +7,10 @@ using namespace std;
 
 class graph {
 public:
-    unordered_map<int, list<int>> adj; // Corrected declaration
+    unordered_map<int, list<int>> adj; 
 
     void addEdge(int u, int v, bool direction) {
-        // direction = 0 for directed graph, 1 for undirected graph
+        // direction = 1 for directed graph, 0 for undirected graph
         adj[u].push_back(v);
         if (direction==0) { // If it's a undirected graph
             adj[v].push_back(u);
